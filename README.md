@@ -11,6 +11,7 @@
 The performance modeling objective is to utilize queueing theory and simulation to identify the optimal resource allocation (staffing and treatment beds) that minimizes patient wait times and maximizes the probability of meeting the 4-hour LoS target, while ensuring high-acuity patients (CTAS 1 & 2) are seen immediately, without unnecessary resource over-provisioning.
 
 
+
 2. Defined Performance Objectives
 
   Performance Aspect	=>  Objective (Metric)	=>  Target/Goal
@@ -45,16 +46,14 @@ The performance modeling objective is to utilize queueing theory and simulation 
 
 
 
-
   Sample Data Set: patient_flow_data.csv
   
   This sample data is a small excerpt for illustration. The actual file in your repository would contain thousands of rows representing daily or monthly operations.
-
-  Patient_ID,Arrival_Time,CTAS_Acuity,Triage_Start_Time,Treatment_Start_Time,Discharge_Time
-  P1001,2025-10-30 14:00:00,3,2025-10-30 14:05:00,2025-10-30 14:50:00,2025-10-30 17:30:00
-  P1002,2025-10-30 14:02:00,5,2025-10-30 14:08:00,2025-10-30 15:45:00,2025-10-30 18:05:00
-  P1003,2025-10-30 14:05:00,2,2025-10-30 14:05:00,2025-10-30 14:15:00,2025-10-30 16:10:00
-  P1004,2025-10-30 14:15:00,4,2025-10-30 14:20:00,2025-10-30 16:30:00,2025-10-30 19:45:00
-  P1005,2025-10-30 14:20:00,3,2025-10-30 14:25:00,2025-10-30 15:00:00,2025-10-30 18:00:00
-
   
+  [patient_flow_data.csv](https://github.com/user-attachments/files/23249032/patient_flow_data.csv)
+  Patient_ID,Arrival_Time,CTAS_Acuity,Triage_Start_Time,Treatment_Start_Time,Discharge_Time
+  P1001,30/10/2025 14:00,3,30/10/2025 14:05,30/10/2025 14:50,30/10/2025 17:30
+  P1002,30/10/2025 14:02,5,30/10/2025 14:08,30/10/2025 15:45,30/10/2025 18:05
+  P1003,30/10/2025 14:05,2,30/10/2025 14:05,30/10/2025 14:15,30/10/2025 16:10
+  P1004,30/10/2025 14:15,4,30/10/2025 14:20,30/10/2025 16:30,30/10/2025 19:45
+  P1005,30/10/2025 14:20,3,30/10/2025 14:25,30/10/2025 15:00,30/10/2025 18:00
